@@ -13,6 +13,7 @@
         &__frame {
             border: 6px solid variables.$textColor;
             display: flex;
+            max-width: 720px;
             width: 100%;
 
             img {
