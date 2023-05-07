@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars - An EBAC Project's</title>
+    <link rel="stylesheet" href="./dist/styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img src="./dist/images/logo/logo_star_wars.png" alt="Star Wars">
+            <a href="#" class="header__button">Subscribe</a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__container">
+            <h1>
+                <img src="./dist/images/logo/logo_star_wars.png" alt="Star Wars" class="hero__logo" />
+            </h1>
+            <p class="text--big">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus libero voluptate commodi. Totam aliquam distinctio omnis expedita ipsa reprehenderit et sequi in, vero delectus fugit ex non minus rem animi.
+            </p>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__container">
+            <span class="about__container__frame">
+                <img src="./dist/images/about_option_01.jpg" alt="Personagens do Star Wars" />
+            </span>
+            <div class="about__content">
+                <h2 class="title--big">About</h2>
+                <p class="text--medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="about__content__highlight">Galatic Empire</span> est eligendi quis excepturi maxime, dolorum,<span class="about__content__highlight">Rebels</span> voluptatibus nostrum maiores sapiente natus, sunt iure enim? Recusandae minus, vero labore cumque eos accusamus ad.</p>
+            </div>
+        </div>
+    </section>
+    <section class="logos">
+        <div class="logos__logo">
+            <img src="./dist/images/logo/logo_galactic_empire.png" alt="Logo Galatic Empire" />
+            <h3 class="title--small">Galatic Empire</h3>
+            <p class="text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia at, quos voluptatem ducimus laboriosam hic ut magni illo accusamus, veritatis quae atque totam voluptate aut libero corporis voluptatibus distinctio voluptates.</p>
+        </div>
+        <div class="logos__logo">
+            <img src="./dist/images/logo/logo_rebel.png" alt="Logo Rebels" />
+            <h3 class="title--small">Rebels</h3>
+            <p class="text--small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia at, quos voluptatem ducimus laboriosam hic ut magni illo accusamus, veritatis quae atque totam voluptate aut libero corporis voluptatibus distinctio voluptates.</p>
+        </div>
+    </section>
+    <section class="carousel">
+        <h2 class="title--big">The Star Wars universe</h2>
+        
+        <nav class="carousel__tabs">
+            <button data-tab-button="movies" class="text--big carousel__tabs__button carousel__tabs__button--is-active">Movies</button>
+            <button data-tab-button="series" class="text--big carousel__tabs__button">Series</button>
+        </nav>
+        <div data-tab-id="movies" class="carousel__inner carousel__inner--is-active">
+            <div data-crs-id="0" class="carousel__inner__item carousel__inner__item--is-active">
+                <img src="./dist/images/movies/movie_episode_01.jpg" alt="Star  Wars - Episode I" />
+            </div>
+            <div data-crs-id="1" class="carousel__inner__item">
+                <img src="./dist/images/movies/movie_episode_02.jpg" alt="Star  Wars - Episode II" />
+            </div>
+            <div data-crs-id="2" class="carousel__inner__item">
+                <img src="./dist/images/movies/movie_episode_03.jpg" alt="Star  Wars - Episode III" />
+            </div>
+            <div data-crs-id="3" class="carousel__inner__item">
+                <img src="./dist/images/movies/movie_episode_04.jpg" alt="Star  Wars - Episode IV" />
+            </div>
+            <div data-crs-id="4" class="carousel__inner__item">
+                <img src="./dist/images/movies/movie_episode_05.jpg" alt="Star  Wars - Episode V" />
+            </div>
+            <div data-crs-id="5" class="carousel__inner__item">
+                <img src="./dist/images/movies/movie_episode_06.jpg" alt="Star  Wars - Episode VI" />
+            </div>
+        </div>
+        <div data-tab-id="series" class="carousel__inner">
+            <div data-crs-id="0" class="carousel__inner__item carousel__inner__item--is-active">
+                <img src="./dist/images/series/series_clone_wars.jpg" alt="Star  Wars - Clone Wars" />
+            </div>
+            <div data-crs-id="1" class="carousel__inner__item">
+                <img src="./dist/images/series/series_rebels.jpg" alt="Star  Wars - Rebels" />
+            </div>
+            <div data-crs-id="2" class="carousel__inner__item">
+                <img src="./dist/images/series/series_bad_batch.png" alt="Star  Wars - Bad Batch" />
+            </div>
+            <div data-crs-id="3" class="carousel__inner__item">
+                <img src="./dist/images/series/series_andor.jpg" alt="Star  Wars - Andor" />
+            </div>
+            <div data-crs-id="4" class="carousel__inner__item">
+                <img src="./dist/images/series/series_kenobi.jpg" alt="Star  Wars - Kenobi" />
+            </div>
+            <div data-crs-id="5" class="carousel__inner__item">
+                <img src="./dist/images/series/series_mandalorian.jpg" alt="Star  Wars - Mandalorian" />
+            </div>
+        </div>
+        <button class="carousel__slide-button carousel__slide-button--left">
+            <img src="./dist/images/icons/previous.png" alt="Previous icon">
+        </button>
+        <button class="carousel__slide-button carousel__slide-button--right">
+            <img src="./dist/images/icons/next.png" alt="Next icon">
+        </button>
+        <div class="carousel__slide-indicators">
+            <button data-crs-button="0" class="carousel__slide-indicators__item carousel__slide-indicators__item--is-select"></button>
+            <button data-crs-button="1" class="carousel__slide-indicators__item"></button>
+            <button data-crs-button="2" class="carousel__slide-indicators__item"></button>
+            <button data-crs-button="3" class="carousel__slide-indicators__item"></button>
+            <button data-crs-button="4" class="carousel__slide-indicators__item"></button>
+            <button data-crs-button="5" class="carousel__slide-indicators__item"></button>
+        </div>
+    </section>
+    <section class="facts">
+        <div class="facts__container">
+            <h2 class="title--big">Star Wars facts</h2>
+            <ul class="facts__fact">
+                <li class="facts__fact__item">
+                    <div class="facts__fact__item__title" data-fact-item>
+                        You know that the word “Ewok” is never actually spoken out loud in the films?
+                    </div>
+                    <div class="text--small facts__fact__item__content">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quod inventore ab accusamus non esse assumenda accusantium odit ad aliquid, hic delectus temporibus incidunt, nemo, porro labore provident beatae. Ad?
+                    </div>
+                </li>
+                <li class="facts__fact__item">
+                    <div class="facts__fact__item__title" data-fact-item>
+                        The line "I have a bad feeling about this" is in every movie!
+                    </div>
+                    <div class="text--small facts__fact__item__content">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quod inventore ab accusamus non esse assumenda accusantium odit ad aliquid, hic delectus temporibus incidunt, nemo, porro labore provident beatae. Ad?
+                    </div>
+                </li>
+                <li class="facts__fact__item">
+                    <div class="facts__fact__item__title" data-fact-item>
+                        The Muppets Miss Piggy and Yoda are voiced by the same person!
+                    </div>
+                    <div class="text--small facts__fact__item__content">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quod inventore ab accusamus non esse assumenda accusantium odit ad aliquid, hic delectus temporibus incidunt, nemo, porro labore provident beatae. Ad?
+                    </div>
+                </li>
+                <li class="facts__fact__item">
+                    <div class="facts__fact__item__title" data-fact-item>
+                        James Earl Jones recorded all his Darth Vader lines in a single day!
+                    </div>
+                    <div class="text--small facts__fact__item__content">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quod inventore ab accusamus non esse assumenda accusantium odit ad aliquid, hic delectus temporibus incidunt, nemo, porro labore provident beatae. Ad?
+                    </div>
+                </li>
+                <li class="facts__fact__item">
+                    <div class="facts__fact__item__title" data-fact-item>
+                        Jar Jar Binks is all responsible for the destruction of the Jedi!
+                    </div>
+                    <div class="text--small facts__fact__item__content">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quod inventore ab accusamus non esse assumenda accusantium odit ad aliquid, hic delectus temporibus incidunt, nemo, porro labore provident beatae. Ad?
+                    </div>
+                </li>
+                <li class="facts__fact__item">
+                    <div class="facts__fact__item__title" data-fact-item>
+                        It’s impossible to obtain an original theatrical version of Star Wars!
+                    </div>
+                    <div class="text--small facts__fact__item__content">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quod inventore ab accusamus non esse assumenda accusantium odit ad aliquid, hic delectus temporibus incidunt, nemo, porro labore provident beatae. Ad?
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <img src="./dist/images/logo/logo_star_wars.png" alt="Star Wars">
+        <p class="text--small">
+            &copy;2023 Disney, The Walt Disney Company and Lucas Films. All rights reserved
+        </p>
+    </footer>
+
+    <script src="./dist/scripts/main.js"></script>
+</body>
+</html>

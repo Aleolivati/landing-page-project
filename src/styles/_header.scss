@@ -1,0 +1,60 @@
+@use 'variables';
+
+.header {
+    background-color: variables.$backgroundColor;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color, ease 1s;
+
+    &__container {
+        max-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5vw 4vw;
+    }
+
+    img {
+        width: 120px;
+        opacity: 1;
+        transition: opacity, ease .5s;
+    }
+
+    &__button {
+        opacity: 1;
+        padding: 12px 16px 8px;
+        background-color: variables.$titleColor;
+        color: variables.$backgroundColor;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        border-radius: 16px;
+        transition: all ease .5s;
+
+        &:hover {
+            background-color: variables.$backgroundColor;
+            color: variables.$titleColor;
+            border: 2px solid variables.$titleColor;
+            font-size: 17px;
+        }
+    }
+
+    &--is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        background-color: transparent;
+        transition: background-color, ease 1s;
+
+        .header img {
+            opacity: 0;
+            transition: opacity, ease .5s;
+        }
+
+        .header__button {
+            opacity: 0;
+            transition: opacity, ease .5s;
+        }
+    }
+}

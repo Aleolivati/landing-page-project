@@ -1,0 +1,82 @@
+@use 'variables';
+
+.facts {
+    &__container {
+        padding: 6vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            padding-bottom: 10px;
+            padding-left: 30px;
+        }
+    }
+
+    &__fact {
+        width: 100%;
+        list-style-type: none;
+
+        &__item {
+            margin: 15px 0;
+            background-color: rgba(variables.$titleColor, .3);
+            padding: 25px 20px;
+            border-radius: 12px;
+
+            &__title {
+                color: variables.$textColor;
+                font-size: 22px;
+                padding-right: 50px;
+                font-weight: bold;
+                position: relative;
+                cursor: pointer;
+                line-height: 150%;
+                letter-spacing: 2px;
+
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                    padding-right: 25px;
+                    line-height: 110%;
+                }
+                
+                &::after {
+                    content: '+';
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    font-size: 40px;
+                    font-weight: normal;
+                    transition: all ease .3s;
+                }
+            }
+
+            &__content {
+                max-width: 95%;
+                line-height: 23px;
+                visibility: hidden;
+                height: 0;
+                transition: all ease .3s;
+
+                @media (max-width: 768px) {
+                    max-width: 100%;
+                    text-align: justify;
+                }
+            }
+
+            &--is-open {
+                .facts__fact__item__title::after {
+                    transform: rotate(45deg);
+                    transition: all ease .3s;
+                }
+
+                .facts__fact__item__content {
+                    visibility: visible;
+                    height: 100%;
+                    padding-top: 15px;
+                    transition: all ease .3s;
+                }
+            }
+        }
+    }
+}

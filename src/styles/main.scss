@@ -1,0 +1,61 @@
+@use 'variables';
+@use 'header';
+@use 'hero';
+@use 'about';
+@use 'logos';
+@use 'carousel';
+@use 'facts';
+@use 'footer';
+
+@font-face {
+    font-family: Star Wars;
+    src: url(../../assets/fonts/Strjmono.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Anakin;
+    src: url(../../assets/fonts/AnakinmonoRegular-n1lP.ttf);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title--big {
+    color: variables.$titleColor;
+    font-family: 'Star Wars', sans-serif;
+    font-size: 30px;
+}
+
+.title--small {
+    color: variables.$titleColor;
+    font-family: 'Star Wars', sans-serif;
+    font-size: 16px;
+}
+
+.text--big {
+    color: variables.$textColor;
+    font-size: 22px;
+    font-family: 'Anakin', sans-serif;
+}
+
+.text--medium {
+    color: variables.$textColor;
+    font-size: 18px;
+    font-family: 'Anakin', sans-serif;
+}
+
+.text--small {
+    color: variables.$textColor;
+    font-size: 16px;
+    font-family: 'Anakin', sans-serif;
+}
+
+body {
+    font-family: 'Anakin', sans-serif;
+    background-color: variables.$backgroundColor;
+}

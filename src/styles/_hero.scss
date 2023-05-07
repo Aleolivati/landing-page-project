@@ -1,0 +1,56 @@
+.hero {
+    background-image: url(../../dist/images/hero_option_01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: -80px;
+
+    @media (max-width: 1023px) {
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
+        height: 100%;
+    }
+
+    &__container {
+        padding: 10% 6vw 6vw;
+        padding-right: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 1023px) {
+            padding: 6vw;
+        }
+    }
+
+    &__logo {
+        max-width: 480px;
+        width: 100%;
+        margin-top: 30px;
+        
+        @media (max-width: 1023px) {
+            margin-top: 80%;
+            max-width: 400px;
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 70%;
+            max-width: 250px;
+        }
+    }
+
+    p {
+        max-width: 600px;
+        width: 100%;
+        text-align: justify;
+        margin-top: 36px;
+
+        @media (max-width: 768px) {
+            width: 90%;
+            margin-top: 24px;
+        }
+    }
+}
