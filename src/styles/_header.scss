@@ -1,19 +1,27 @@
 @use 'variables';
 
 .header {
-    background-color: variables.$backgroundColor;
     position: sticky;
     top: 0;
     left: 0;
+    background-color: variables.$backgroundColor;
     z-index: 1;
     transition: background-color, ease 1s;
-
+    
     &__container {
-        max-height: 80px;
+        height: 80px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1.5vw 4vw;
+
+        @media (max-width: 1023px) {
+            padding: 5vw 4vw;
+        }
+
+        @media (max-width: 768px) {
+            padding: 6vw 4vw;
+        }
     }
 
     img {
